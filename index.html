@@ -1,12 +1,147 @@
-<h1>website is not Available Now</h1>
-<button onclick="window.location.href = window.location.href">Reload to see have the website Available or Not</button>
-<br>
-<div style="background:#0d1117;color:white;border-radius:5px;">1|&nbsp
-  <font color="red">We will</font>&nbsp
-  <font color="yellow">make the</font>&nbsp
-  <font color="blue">webiste</font>&nbsp
-  <font color="#fff">during</font>&nbsp
-  <font color="red">Christmas! </font>
-</div>
-Code Block ^<br>
-xcfo. StarWeb 2021,.
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Web | Official</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header" id="h">
+        <h1>Star Web</h1>
+        <h4>We create your website.</h4>
+    </div>
+    <div id="navbar">
+        <center>
+            <button id="home" onclick="s(0)" type="menu">Home</button>
+            <button id="intro" onclick="s(300)" type="menu">Intro</button>
+            <button id="create" onclick="s(2500)" type="menu">Create</button>
+        </center>
+    </div>
+    <div class="body">
+        <div class="beautiful" id="i">
+            <font>
+                Nice looking
+            </font>
+            <br>
+            <br>
+            <text>Examples</text>
+            <hr><br>
+            <text>Minimalistic</text><br>
+            <img src="assets/xchuangcwebsite.png"><br>
+            <a href="https://xchuangc.github.io">
+                Website of Xchuangc
+            </a>
+            <br><br><br>
+            <text>Beautiful</text><br>
+            <img src="assets/textzerowebsite.png"><br>
+            <a href="https://textzero.github.io">
+                Website of Text-Zero
+            </a>
+            <br><br><br>
+            <hr>
+            <hr>
+            <br>
+        </div>
+
+        <div class="functional">
+            <font>
+                Buttons
+            </font>
+            <br>
+            <br>
+            <text>Examples</text>
+            <hr><br>
+            <c>
+                <div class="tzbtn" id="com">
+                </div>
+            </c>
+            <c class="x">
+                <button class="xcbtn">
+                </button>
+            </c>
+            <c class="x">
+                <button class="tebtn">
+                </button>
+            </c><br>
+            <hr>
+            <hr>
+            <br><br><br><br>
+        </div>
+        <div class="create">
+            <font style="font-size: 75px;font-weight:bold;">
+                Create
+            </font>
+            <br>
+            <br>
+            <hr>
+            <font>
+                Design
+            </font>
+            <div class="codeblock">
+                <cd style="color:red">1|&nbsp;</cd>Submit your <code style="color:yellow">design file</code> to us, and we will use it to make a <code style="color:yellow">website</code>!</div>
+            <br>
+            <text>For now, we only allow files from figma, press the "share" button in the upper right corner, and then send us the link with email.</text>
+            <br><br><br><br>
+            <hr>
+            <font>
+                Email
+            </font><br><br>
+            <text>Please respect the following email sample.</text><br><br>
+            <div class="copy" style="user-select: text;padding:10px;color:rgb(0, 0, 0);background:white;">
+                Dear <strong>StarWeb</strong>,<br>I want to get a web page. You can call me (xxx), I'm from https://starwe.github.io/.<br> I want to get (paid/free) website. Here is my design file, (link).
+            </div><br><br><br><br><br><br><br><br><br>
+            <center>
+                <tr>
+                    <a style="color:rgba(255, 255, 255, 0.671);" href="https://starwe.github.io/">Website</a><br><a style="color:rgba(255, 255, 255, 0.671);" href="https://starwe.github.io/service">Service</a>&nbsp;<a style="color:rgba(255, 255, 255, 0.671);"
+                        href="https://starwe.github.io/api">Api</a>&nbsp;<a style="color:rgba(255, 255, 255, 0.671);" href="https://starwe.github.io/docs">Docs</a><br><a style="color:rgba(255, 255, 255, 0.671);" href="https://textzero.github.io/?starweb">Text-Zero</a>&nbsp;
+                    <a style="color:rgba(255, 255, 255, 0.671);" href="https://xchuangc.github.io/?starweb">Xchuangc</a><br><a style="color:rgb(255, 255, 255);">©Star Web, 2021. All Rights Reserved.</a></tr><br id="cr">
+            </center>
+        </div>
+
+
+    </div>
+    <script>
+        // Nav
+        window.onscroll = function() {
+            scrollNav();
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        const home = document.getElementById("home");
+        const intro = document.getElementById("intro");
+        const create = document.getElementById("create");
+
+        function scrollNav() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+
+            if (window.scrollY < 300) {
+                home.classList.add("active");
+                intro.classList.remove("active");
+                create.classList.remove("active");
+            } else if (window.scrollY > 300 && window.scrollY < 2000) {
+                home.classList.remove("active");
+                intro.classList.add("active");
+                create.classList.remove("active");
+            } else {
+                home.classList.remove("active");
+                intro.classList.remove("active");
+                create.classList.add("active");
+            }
+        }
+
+        scrollNav()
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>

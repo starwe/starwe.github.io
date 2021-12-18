@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> As your service is in free plan, you will not get the source code, but the Starweb-code. Check the developer documentation, you can publish it on your own site.
+    <hr>As your service is in paid plan, you will get the source code, you can publish it on your own site.<br>
+    <hr> This email is replying to the mail from (xxx).<br>&nbsp;&nbsp;&nbsp;&nbsp;We have received your disign file. We will make the website in a month, and send you the starweb-code to you as soon as possible. Thanks for choosing Star Web. <br>
+    <input id="name" placeholder="his name"><br> <input id="replyer" placeholder="who you are"><br> <input id="site" placeholder="can he get source code"><br> <input id="ttext" placeholder="text"><br> <button onclick="a()">Getcode</button><br>
+    <textarea id="text"></textarea>
+    <script>
+        const name = document.getElementById('name');
+        const replyer = document.getElementById('replyer');
+        const site = document.getElementById('site');
+        const text = document.getElementById('text');
+        const ttext = document.getElementById('ttext');
+        var code = `<div style="background:#bfacec;height:100%;width:100%;user-select:none;text-align:center;">    <center><div style="background:linear-gradient(45deg, white, #00ff5e, #0f0f,#b9f8ab, #d8d8ff);width:100%;border-top:1px solid black;border-bottom:1px solid black;"><img style="padding:15px;position:absolute;top:100px;left:50%;transform:translateX(-50%);border-radius:5px;padding-left:20px;padding-right:20px;width:100px" src="https://raw.githubusercontent.com/starwe/starwe.github.io/main/star.png"></div><br><tr style="width:95%;font-size:24px;background:rgb(241, 241, 241);padding:15px;position:absolute;top:300px;left:50%;transform:translateX(-50%);border-radius:2px;font-weight:2;padding-left:20px;padding-right:20px;">Dear (xxx),<br>&nbsp;&nbsp;&nbsp;&nbsp;Here is Star Web. (text)<br>&nbsp;&nbsp;&nbsp;Star Web,<br>&nbsp;&nbsp;(Replyer)</tr><br><tr style="width:95%;font-size:24px;background:rgba(241, 241, 241, 0.788);padding:15px;position:absolute;bottom:300px;left:50%;transform:translateX(-50%);border-radius:2px;font-weight:2;padding-left:20px;padding-right:20px;">(site)</tr><br><tr style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);text-align:center;"><a style="color:rgba(255, 255, 255, 0.671);" href="https://starwe.github.io/">Website</a><br><a style="color:rgba(255, 255, 255, 0.671);" href="https://starwe.github.io/service">Service</a>&nbsp;<a style="color:rgba(255, 255, 255, 0.671);" href="https://starwe.github.io/api">Api</a>&nbsp;<a style="color:rgba(255, 255, 255, 0.671);" href="https://starwe.github.io/docs">Docs</a><br><a style="color:rgba(255, 255, 255, 0.671);" href="https://textzero.github.io/?starweb">Text-Zero</a>&nbsp;<a style="color:rgba(255, 255, 255, 0.671);" href="https://xchuangc.github.io/?starweb">Xchuangc</a><br>©Star Web, 2021. All Rights Reserved.</tr></center></div>`
+
+        function a() {
+            text.value = code.replace('(xxx)', name.value).replace('(text)', ttext.value).replace('(xxx)', name.value).replace('(Replyer)', replyer.value).replace('(site)', site.value);
+        }
+    </script>
+</body>
+
+</html>
