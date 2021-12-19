@@ -3,7 +3,7 @@ var changecode = function(code) {
         code
         .replaceAll("\n", "")
         .replaceAll("//--//", "<")
-        .replaceAll("\\\\--\\\\", ">")
+        .replaceAll("/--/", ">")
         .replaceAll("$%%-%%$01", "a")
         .replaceAll("$%%-%%$02", "b")
         .replaceAll("$%%-%%$03", "c")
@@ -64,7 +64,7 @@ function gcode(code) {
         code
         .replaceAll("\n", "")
         .replaceAll("<", "//--//")
-        .replaceAll(">", "\\\\--\\\\")
+        .replaceAll(">", "/--/")
         .replaceAll("a", "$%%-%%$01")
         .replaceAll("b", "$%%-%%$02")
         .replaceAll("c", "$%%-%%$03")
