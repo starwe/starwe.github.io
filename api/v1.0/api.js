@@ -1,9 +1,8 @@
 var code, noterror = true,
     newcode;
 
-var script = window.parent.document.getElementById('script').innerHTML.split("'")[1].split("'")[0];
-starwebusercode = script;
-console.log(script)
+var script = starwebusercode;
+console.log(script);
 var setUpTheFrameToWebSiteIframe = function() {
     try {
         code = starwebusercode;
